@@ -39,6 +39,12 @@
         font-size:      $font-size_1;
         line-height:    $line-height_2;
     }
+    &--mod3{
+        line-height:    $line-height_0;   
+        color:          $color2;
+        opacity:        $opacidad_0;
+        margin: 0 13px 0 19px;
+    }
 }
 .formatoLetra3{
     font-family:    $font-family_2;
@@ -56,5 +62,37 @@
         line-height:    $line-height_0;  
         margin-top: 54px;
         margin-bottom: auto;
+    }
+} 
+.formatoLetra4{
+    font-family:    $font-family_1;
+    font-style:     $font-style_1;
+    font-weight:    $font-weight_2;
+    font-size:      $font-size_7;
+    line-height:    $line-height_7;    
+    letter-spacing: $letter-spacing_1;
+    color:          $color4;
+    opacity:        $opacidad_0;
+    &--mod1{
+        font-size:      $font-size_3;
+        line-height:    $line-height_8;
+        width: 780px;
+        text-align: center;
+
+    }
+}
+.formatoLetra5{
+    font-family:    $font-family_2;
+    font-style:     $font-style_1;
+    font-weight:    $font-weight_2;
+    font-size:      $font-size_5;
+    line-height:    $line-height_5;
+    letter-spacing: $letter-spacing_2;
+    color:          $color4;
+    &__mod1{
+        font-family: $font-family_1;
+        font-size: $font-size_2;
+        line-height: $font-size_9;
+        opacity: $opacidad_2;
     }
 }

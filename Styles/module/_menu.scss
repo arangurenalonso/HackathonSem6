@@ -1,0 +1,31 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 83px;
+    padding-right: 100px;
+}
+    
+.menu{
+    width: 366px;
+    height: 28px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    &__enlace{
+        text-decoration: none;
+        font-family:    $font-family_2;
+        font-style:     $font-style_1;
+        font-weight:    $font-weight_1;
+        font-size:      $font-size_3;
+        line-height:    $font-size_8;
+        letter-spacing: $letter-spacing_1;
+        color:          $color2;
+        &:hover{
+            font-size:      $font-size_4;
+        }
+    }
+}

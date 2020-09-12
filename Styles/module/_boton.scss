@@ -1,0 +1,20 @@
+.boton{
+  
+    width: 220px;
+    height: 56px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color6 ;
+    &__contenido{
+        font-family:    $font-family_1;
+        font-style:     $font-style_1;
+        font-weight:    $font-weight_2;
+        font-size:      $font-size_2;
+        line-height:    $line-height_3;
+        letter-spacing: $letter-spacing_1;
+        color:          $color4;
+
+    }
+} 

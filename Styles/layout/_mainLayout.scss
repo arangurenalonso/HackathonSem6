@@ -10,18 +10,14 @@
 }
 section{
     &:nth-child(1){
-        @extend %verificarcaja;
         grid-area: search;
 
     }
     &:nth-child(2){
-        @extend %verificarcaja;
         grid-area: popular;
-        margin-bottom: 58px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     }
     &:nth-child(3){
-        @extend %verificarcaja;
         grid-area: allarticle;
 
     }

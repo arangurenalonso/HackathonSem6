@@ -1,0 +1,17 @@
+.footerLayout{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 391px 478px;
+    grid-template-areas: 'uno'
+                        'dos';
+    section{
+        &:nth-child(1){
+            grid-area: uno;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        
+        }
+        &:nth-child(2){
+            grid-area: dos;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+
+.icono{
+  
+    height: 24px;
+    width: 24px;
+    border: 2px $color5 solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -15px 0px $color5;
+    &__letra{
+        font-family: $font-family_3;
+        font-size: $font-size_3;
+        line-height: $line-height_9;
+        letter-spacing: $letter-spacing_1;
+        color: $color5;
+    }
+} 

@@ -1,0 +1,27 @@
+.footer{
+    height: 100%;
+    position: relative;
+           &__fondo{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            top: 0;
+        }
+    }
+.footerSuperior{
+    padding-left: 213px;
+    padding-right: 126px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &__Conenido{
+        width: 460px;
+        height: 204px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+}
