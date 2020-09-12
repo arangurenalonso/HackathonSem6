@@ -1,0 +1,52 @@
+.card{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 540px ;
+    grid-template-rows: 100%;
+    grid-template-areas: 'dos uno';
+    grid-column-gap: 20px;
+    grid-row-gap: 13px;
+
+    &--tipo2{
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 1fr;
+        grid-template-areas: 'uno' 
+                            'dos';
+    }
+    &--Tipo3{
+        grid-template-columns: 327.24px 1fr ;
+        grid-template-rows: 100%;
+        grid-template-areas: 'uno dos';
+    }
+}
+.card__img{
+    @extend %verificarcaja2;
+    grid-area: uno;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.card__descripcion{
+    @extend %verificarcaja2;
+    grid-area: dos;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card__Parte1{
+    width: 100%;
+}
+.card__Parte2{
+    width: 100%;
+    height: 52px;
+    @extend %verificarcaja1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.card__icono{
+    margin-left: 41.45px;
+}

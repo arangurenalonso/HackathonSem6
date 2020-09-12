@@ -1,5 +1,4 @@
 .popularLayout{
-    height: 200px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 380px 477px;
@@ -12,20 +11,16 @@
     
     article{
         &:nth-child(1){
-            @extend %verificarcaja1;
             grid-area: uno;
 
         }
         &:nth-child(2){
-            @extend %verificarcaja1;
             grid-area: dos;
         }
         &:nth-child(3){
-            @extend %verificarcaja1;
             grid-area: tres;
         }
         &:nth-child(4){
-            @extend %verificarcaja1;
             grid-area: cuatro;
         }
     }

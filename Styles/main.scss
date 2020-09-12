@@ -1,14 +1,22 @@
 @import "base/reset";
 @import "Theme/variables";
+@import "theme/formatoLetra";
 @import "layout/conteinerLayout";
 @import "layout/mainLayout";
 @import "layout/popularLayout";
+@import "layout/allArticleLayout";
+@import "module/card";
+
 
 %verificarcaja{
     border: 2px red solid;
 }
 %verificarcaja1{
     border: 2px blue solid;
+ 
+}
+%verificarcaja2{
+    border: 2px black solid;
  
 }
 

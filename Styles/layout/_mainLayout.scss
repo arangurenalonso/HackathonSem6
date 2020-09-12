@@ -1,5 +1,6 @@
 .mainLayout{
-    min-width: 940px ;
+    max-width: 940px ;
+
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 168px 1044px 1260px;
@@ -17,6 +18,7 @@ section{
         @extend %verificarcaja;
         grid-area: popular;
         margin-bottom: 58px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     }
     &:nth-child(3){
         @extend %verificarcaja;
