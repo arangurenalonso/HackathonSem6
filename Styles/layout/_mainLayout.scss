@@ -1,0 +1,26 @@
+.mainLayout{
+
+    display: grid;
+    grid-template-columns: 941px;
+    grid-template-rows: 168px 1044px 1260px;
+    grid-template-areas: 'search'
+                        'popular'
+                        'allarticle';
+}
+section{
+    &:nth-child(1){
+        @extend %verificarcaja;
+        grid-area: search;
+
+    }
+    &:nth-child(2){
+        @extend %verificarcaja;
+        grid-area: popular;
+        margin-bottom: 58px;
+    }
+    &:nth-child(3){
+        @extend %verificarcaja;
+        grid-area: allarticle;
+
+    }
+}

@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #E5E5E5;
+}
+
+.conteinerLayout {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1366px;
+      grid-template-columns: 1366px;
+  -ms-grid-rows: 130px 250px 2627px 869px;
+      grid-template-rows: 130px 250px 2627px 869px;
+      grid-template-areas: 'nav' 'header' 'main' 'footer';
+}
+
+nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: nav;
+}
+
+header {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+main {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: main;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+
+.mainLayout {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 941px;
+      grid-template-columns: 941px;
+  -ms-grid-rows: 168px 1044px 1260px;
+      grid-template-rows: 168px 1044px 1260px;
+      grid-template-areas: 'search' 'popular' 'allarticle';
+}
+
+section:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: search;
+}
+
+section:nth-child(2) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: popular;
+  margin-bottom: 58px;
+}
+
+section:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: allarticle;
+}
+
+.popularLayout {
+  height: 200px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 380px 477px;
+      grid-template-rows: 380px 477px;
+      grid-template-areas: 'uno uno uno' 'dos tres cuatro';
+  grid-column-gap: 20px;
+  grid-row-gap: 32px;
+}
+
+article:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: uno;
+}
+
+article:nth-child(2) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: dos;
+}
+
+article:nth-child(3) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: tres;
+}
+
+article:nth-child(4) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: cuatro;
+}
+
+nav, header, main, footer, section:nth-child(1), section:nth-child(2), section:nth-child(3) {
+  border: 2px red solid;
+}
+
+article:nth-child(1), article:nth-child(2), article:nth-child(3), article:nth-child(4) {
+  border: 2px blue solid;
+}
+/*# sourceMappingURL=main.css.map */

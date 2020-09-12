@@ -1,0 +1,28 @@
+.conteinerLayout{
+    display: grid;
+    grid-template-columns: 1366px;
+    grid-template-rows: 130px 250px 2627px 869px;
+    grid-template-areas: 'nav'
+                        'header'
+                        'main'
+                        'footer';
+}
+nav{
+    grid-area: nav;
+    @extend %verificarcaja;
+}
+header{
+    grid-area: header;
+    @extend %verificarcaja;
+}
+main{
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    @extend %verificarcaja;
+}
+footer{
+    grid-area: footer;
+    @extend %verificarcaja;
+}
+
